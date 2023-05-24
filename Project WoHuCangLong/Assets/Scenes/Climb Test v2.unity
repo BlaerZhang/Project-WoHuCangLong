@@ -639,7 +639,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -1.1726078, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -650,7 +650,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3.3452156, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &73390638
 SpriteRenderer:
@@ -1030,15 +1030,15 @@ FixedJoint2D:
   m_GameObject: {fileID: 95956968}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 1
+  m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 950979285}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: -0.54}
   m_ConnectedAnchor: {x: -0, y: 0.44000033}
-  m_DampingRatio: 1
-  m_Frequency: 30
+  m_DampingRatio: 0.75
+  m_Frequency: 100
 --- !u!61 &95956971
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2026,6 +2026,8 @@ GameObject:
   - component: {fileID: 197780686}
   - component: {fileID: 197780685}
   - component: {fileID: 197780687}
+  - component: {fileID: 197780689}
+  - component: {fileID: 197780688}
   m_Layer: 14
   m_Name: Ground
   m_TagString: Ground
@@ -2087,6 +2089,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundFeedback: {fileID: 775118144}
+--- !u!61 &197780688
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197780684}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 37.068363, y: 23.568161}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0196304, y: 48.136322}
+  m_EdgeRadius: 0
+--- !u!61 &197780689
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197780684}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -37.00698, y: 23.568161}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.90927124, y: 48.136322}
+  m_EdgeRadius: 0
 --- !u!1 &198810470
 GameObject:
   m_ObjectHideFlags: 0
@@ -2174,7 +2228,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -1.172608, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2185,7 +2239,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3.345216, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &198810475
 SpriteRenderer:
@@ -2671,15 +2725,15 @@ FixedJoint2D:
   m_GameObject: {fileID: 273049752}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 1
+  m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 1413857816}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: -0.54}
   m_ConnectedAnchor: {x: 0, y: 0.42}
-  m_DampingRatio: 1
-  m_Frequency: 30
+  m_DampingRatio: 0.75
+  m_Frequency: 100
 --- !u!61 &273049755
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2959,15 +3013,15 @@ FixedJoint2D:
   m_GameObject: {fileID: 302343833}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 1
+  m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 273049753}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: -0.54}
   m_ConnectedAnchor: {x: 0, y: 0.42}
-  m_DampingRatio: 1
-  m_Frequency: 30
+  m_DampingRatio: 0.75
+  m_Frequency: 100
 --- !u!61 &302343836
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4137,15 +4191,15 @@ FixedJoint2D:
   m_GameObject: {fileID: 437890378}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 1
+  m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 1931985969}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: -0.54}
   m_ConnectedAnchor: {x: 0, y: 0.42}
-  m_DampingRatio: 1
-  m_Frequency: 30
+  m_DampingRatio: 0.75
+  m_Frequency: 100
 --- !u!61 &437890381
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4429,15 +4483,15 @@ FixedJoint2D:
   m_GameObject: {fileID: 475191049}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 1
+  m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 756295241}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: -0.54}
   m_ConnectedAnchor: {x: 0, y: 0.42}
-  m_DampingRatio: 1
-  m_Frequency: 30
+  m_DampingRatio: 0.75
+  m_Frequency: 100
 --- !u!61 &475191052
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4669,7 +4723,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -1.1726078, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4680,7 +4734,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3.3452156, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &476079673
 SpriteRenderer:
@@ -4825,15 +4879,15 @@ FixedJoint2D:
   m_GameObject: {fileID: 503838493}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 1
+  m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 1595258218}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: -0.54}
   m_ConnectedAnchor: {x: 0, y: 0.42}
-  m_DampingRatio: 1
-  m_Frequency: 30
+  m_DampingRatio: 0.75
+  m_Frequency: 100
 --- !u!61 &503838496
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5976,15 +6030,15 @@ FixedJoint2D:
   m_GameObject: {fileID: 632949379}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 1
+  m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 859972396}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: -0.54}
   m_ConnectedAnchor: {x: -0, y: 0.44000033}
-  m_DampingRatio: 1
-  m_Frequency: 30
+  m_DampingRatio: 0.75
+  m_Frequency: 100
 --- !u!61 &632949382
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6329,15 +6383,15 @@ FixedJoint2D:
   m_GameObject: {fileID: 756295240}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 1
+  m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 503838494}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: -0.54}
   m_ConnectedAnchor: {x: 0, y: 0.42}
-  m_DampingRatio: 1
-  m_Frequency: 30
+  m_DampingRatio: 0.75
+  m_Frequency: 100
 --- !u!61 &756295243
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7036,7 +7090,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 1.1726081, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -7047,7 +7101,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3.3452163, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &834342297
 SpriteRenderer:
@@ -7167,15 +7221,15 @@ FixedJoint2D:
   m_GameObject: {fileID: 859972395}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 1
+  m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 1442171681}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: -0.54}
   m_ConnectedAnchor: {x: -0, y: 0.44000033}
-  m_DampingRatio: 1
-  m_Frequency: 30
+  m_DampingRatio: 0.75
+  m_Frequency: 100
 --- !u!61 &859972398
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7371,15 +7425,15 @@ FixedJoint2D:
   m_GameObject: {fileID: 876669955}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 1
+  m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 1883644583}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: -0.54}
   m_ConnectedAnchor: {x: 0, y: 0.42}
-  m_DampingRatio: 1
-  m_Frequency: 30
+  m_DampingRatio: 0.75
+  m_Frequency: 100
 --- !u!61 &876669958
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8068,15 +8122,15 @@ FixedJoint2D:
   m_GameObject: {fileID: 950979284}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 1
+  m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 302343834}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: -0.54}
   m_ConnectedAnchor: {x: -0, y: 0.44000033}
-  m_DampingRatio: 1
-  m_Frequency: 30
+  m_DampingRatio: 0.75
+  m_Frequency: 100
 --- !u!61 &950979287
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8772,15 +8826,15 @@ FixedJoint2D:
   m_GameObject: {fileID: 1061036015}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 1
+  m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 437890379}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: -0.54}
   m_ConnectedAnchor: {x: 0, y: 0.42}
-  m_DampingRatio: 1
-  m_Frequency: 30
+  m_DampingRatio: 0.75
+  m_Frequency: 100
 --- !u!61 &1061036018
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8976,15 +9030,15 @@ FixedJoint2D:
   m_GameObject: {fileID: 1062386290}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 1
+  m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 1260989709}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: -0.54}
   m_ConnectedAnchor: {x: -0, y: 0.4499988}
-  m_DampingRatio: 1
-  m_Frequency: 30
+  m_DampingRatio: 0.75
+  m_Frequency: 100
 --- !u!61 &1062386293
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10619,9 +10673,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160800285}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.13, y: 6.791, z: 0}
-  m_LocalScale: {x: 0.19559188, y: 2.3563108, z: 1.2195122}
+  m_LocalScale: {x: 0.19559188, y: 2.3563106, z: 1.2195121}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 229932741}
@@ -10684,15 +10738,15 @@ FixedJoint2D:
   m_GameObject: {fileID: 1172644772}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 1
+  m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 2128209375}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: -0.54}
   m_ConnectedAnchor: {x: 0, y: 0.42}
-  m_DampingRatio: 1
-  m_Frequency: 30
+  m_DampingRatio: 0.75
+  m_Frequency: 100
 --- !u!61 &1172644775
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10898,15 +10952,15 @@ FixedJoint2D:
   m_GameObject: {fileID: 1179379935}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 1
+  m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 1061036016}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: -0.54}
   m_ConnectedAnchor: {x: 0, y: 0.42}
-  m_DampingRatio: 1
-  m_Frequency: 30
+  m_DampingRatio: 0.75
+  m_Frequency: 100
 --- !u!61 &1179379938
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11287,7 +11341,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -1.172608, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -11298,7 +11352,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3.345216, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &1253075877
 SpriteRenderer:
@@ -11403,15 +11457,15 @@ FixedJoint2D:
   m_GameObject: {fileID: 1260989708}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 1
+  m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 95956969}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: -0.54}
   m_ConnectedAnchor: {x: -0, y: 0.4100003}
-  m_DampingRatio: 1
-  m_Frequency: 30
+  m_DampingRatio: 0.75
+  m_Frequency: 100
 --- !u!61 &1260989711
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11611,7 +11665,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 1.172608, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -11622,7 +11676,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3.345216, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &1276181637
 SpriteRenderer:
@@ -11844,7 +11898,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_SizeDelta: {x: 4295.548, y: 2416.2458}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1340993835
 MonoBehaviour:
@@ -12314,15 +12368,15 @@ FixedJoint2D:
   m_GameObject: {fileID: 1413857815}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 1
+  m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 1179379936}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: -0.54}
   m_ConnectedAnchor: {x: 0, y: 0.42}
-  m_DampingRatio: 1
-  m_Frequency: 30
+  m_DampingRatio: 0.75
+  m_Frequency: 100
 --- !u!61 &1413857818
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12718,15 +12772,15 @@ FixedJoint2D:
   m_GameObject: {fileID: 1442171677}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 1
+  m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 1172644773}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: -0.54}
   m_ConnectedAnchor: {x: 0, y: 0.42}
-  m_DampingRatio: 1
-  m_Frequency: 30
+  m_DampingRatio: 0.75
+  m_Frequency: 100
 --- !u!61 &1442171680
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13013,6 +13067,7 @@ GameObject:
   - component: {fileID: 1475016013}
   - component: {fileID: 1475016012}
   - component: {fileID: 1475016011}
+  - component: {fileID: 1475016014}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Untagged
@@ -13159,7 +13214,7 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 81565b63-8607-4f15-82c7-5110d3e3a543
     m_ActionName: Gameplay/Reload[/Keyboard/r,/XInputControllerWindows/dpad/down]
-  m_NeverAutoSwitchControlSchemes: 0
+  m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: Gamepad
   m_DefaultActionMap: Gameplay
   m_SplitScreenIndex: -1
@@ -13182,6 +13237,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -15}
+--- !u!114 &1475016014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475016010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad356b5a52f424a4ebaf3280d7c9cea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerWeapon: {fileID: 1160800285}
+  playerCharacter: {fileID: 625498419}
 --- !u!1 &1499431309
 GameObject:
   m_ObjectHideFlags: 0
@@ -13265,7 +13334,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.48377678, y: -0.005409593}
+  m_ConnectedAnchor: {x: 0.48377565, y: -0.0054109753}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -13399,8 +13468,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1515067747}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.13, y: 6.791, z: 0}
-  m_LocalScale: {x: 0.19559188, y: 2.3563108, z: 1.2195122}
+  m_LocalPosition: {x: 1.1299996, y: 6.7909985, z: 0}
+  m_LocalScale: {x: 0.19559188, y: 2.3563108, z: 1.2195121}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1229800836}
@@ -13822,15 +13891,15 @@ FixedJoint2D:
   m_GameObject: {fileID: 1538490663}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 1
+  m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 632949380}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: -0.54}
   m_ConnectedAnchor: {x: -0, y: 0.4100003}
-  m_DampingRatio: 1
-  m_Frequency: 30
+  m_DampingRatio: 0.75
+  m_Frequency: 100
 --- !u!61 &1538490666
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14422,7 +14491,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 1.1726081, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -14433,7 +14502,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3.3452163, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &1573411213
 SpriteRenderer:
@@ -15577,6 +15646,7 @@ GameObject:
   - component: {fileID: 1769578360}
   - component: {fileID: 1769578359}
   - component: {fileID: 1769578358}
+  - component: {fileID: 1769578361}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Untagged
@@ -15723,7 +15793,7 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 81565b63-8607-4f15-82c7-5110d3e3a543
     m_ActionName: Gameplay/Reload[/Keyboard/r,/XInputControllerWindows/dpad/down]
-  m_NeverAutoSwitchControlSchemes: 0
+  m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: Gamepad
   m_DefaultActionMap: Gameplay
   m_SplitScreenIndex: -1
@@ -15746,6 +15816,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 15}
+--- !u!114 &1769578361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769578357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad356b5a52f424a4ebaf3280d7c9cea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerWeapon: {fileID: 1515067747}
+  playerCharacter: {fileID: 185372288}
 --- !u!1 &1781782427
 GameObject:
   m_ObjectHideFlags: 0
@@ -15797,15 +15881,15 @@ FixedJoint2D:
   m_GameObject: {fileID: 1781782427}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 1
+  m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 624786518}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: -0.54}
   m_ConnectedAnchor: {x: 0, y: 0.42}
-  m_DampingRatio: 1
-  m_Frequency: 30
+  m_DampingRatio: 0.75
+  m_Frequency: 100
 --- !u!61 &1781782430
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16001,15 +16085,15 @@ FixedJoint2D:
   m_GameObject: {fileID: 1883644582}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 1
+  m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 475191050}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: -0.54}
   m_ConnectedAnchor: {x: 0, y: 0.42}
-  m_DampingRatio: 1
-  m_Frequency: 30
+  m_DampingRatio: 0.75
+  m_Frequency: 100
 --- !u!61 &1883644585
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16752,7 +16836,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 1.1726079, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -16763,7 +16847,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3.3452158, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &1914456904
 SpriteRenderer:
@@ -16873,15 +16957,15 @@ FixedJoint2D:
   m_GameObject: {fileID: 1931985968}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 1
+  m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 1781782428}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: -0.54}
   m_ConnectedAnchor: {x: 0, y: 0.42}
-  m_DampingRatio: 1
-  m_Frequency: 30
+  m_DampingRatio: 0.75
+  m_Frequency: 100
 --- !u!61 &1931985971
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17917,15 +18001,15 @@ FixedJoint2D:
   m_GameObject: {fileID: 2054568531}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 1
+  m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 1538490664}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: -0.54}
   m_ConnectedAnchor: {x: -0, y: 0.4499988}
-  m_DampingRatio: 1
-  m_Frequency: 30
+  m_DampingRatio: 0.75
+  m_Frequency: 100
 --- !u!61 &2054568534
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18593,15 +18677,15 @@ FixedJoint2D:
   m_GameObject: {fileID: 2128209374}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 1
+  m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 876669956}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: -0.54}
   m_ConnectedAnchor: {x: 0, y: 0.42}
-  m_DampingRatio: 1
-  m_Frequency: 30
+  m_DampingRatio: 0.75
+  m_Frequency: 100
 --- !u!61 &2128209377
 BoxCollider2D:
   m_ObjectHideFlags: 0
