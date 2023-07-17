@@ -34,6 +34,10 @@ public class HitDetect : MonoBehaviour
 
     private MMF_Player hitWeaponFeedback;
 
+    private MMFlash leftFlash;
+
+    private MMFlash rightFlash;
+
     public GameObject bloodStain;
 
     public GameObject player1BambooBloodStain;
@@ -60,6 +64,8 @@ public class HitDetect : MonoBehaviour
         hitBodyFeedbackMedium = GameObject.Find("Hit Body Feedback Medium").GetComponent<MMF_Player>();
         hitBodyFeedbackLarge = GameObject.Find("Hit Body Feedback Large").GetComponent<MMF_Player>();
         hitWeaponFeedback = GameObject.Find("Hit Weapon Feedback").GetComponent<MMF_Player>();
+        leftFlash = GameObject.Find("Left Flash").GetComponent<MMFlash>();
+        rightFlash = GameObject.Find("Right Flash").GetComponent<MMFlash>();
         // endingText = GameObject.Find("Ending Text").GetComponent<TextMeshProUGUI>();
         // weaponTrail = GetComponentInChildren<TrailRenderer>();
         player1BambooBloodStain.SetActive(false);
@@ -117,9 +123,11 @@ public class HitDetect : MonoBehaviour
                     float damage = actionForce.baseDamage * GetHitVelocityMultiplier(hitVelocity) *
                                    GetBodyVelocityMultiplier(relativeBodyVelocity) *
                                    GameManager.instance.bodyHitMultiplier[DetectBodyPart(col)];
-                    
-                    DealDamage(damage); 
-                    PlayHitFeedback(damage, hitPoint);
+
+                    int playerIndex = DetectPlayer();
+
+                    DealDamage(playerIndex, damage); 
+                    PlayHitFeedback(damage, hitPoint, playerIndex);
                     
                     print(damage + "||" + "Body Velocity: " + relativeBodyVelocity + "\n" + "Hit Velocity: " + hitVelocity);
                 }
@@ -191,14 +199,28 @@ public class HitDetect : MonoBehaviour
         }
     }
 
-    void DealDamage(float damage)
+    int DetectPlayer()
     {
         if (gameObject.CompareTag("Player 1 Weapon"))
+        {
+            return 2;
+        }
+
+        if (gameObject.CompareTag("Player 2 Weapon"))
+        {
+            return 1;
+        }
+        throw new Exception();
+    }
+
+    void DealDamage(int playerIndex, float damage)
+    {
+        if (playerIndex == 2)
         {
             GameManager.instance.player2HP -= damage;
         }
 
-        if (gameObject.CompareTag("Player 2 Weapon"))
+        if (playerIndex == 1)
         {
             GameManager.instance.player1HP -= damage;
         }
@@ -269,14 +291,25 @@ public class HitDetect : MonoBehaviour
         return bodyVelocityMultiplier;
     }
 
-    void PlayHitFeedback(float damage, Vector3 hitPoint)
+    void PlayHitFeedback(float damage, Vector3 hitPoint, int playerIndex)
     {
+        if (playerIndex == 1)
+        {
+            leftFlash.FlashID = 1;
+            rightFlash.FlashID = 2;
+        }
+        else
+        {
+            rightFlash.FlashID = 1;
+            leftFlash.FlashID = 2;
+        }
+        
         if (damage <= 20)
         {
             hitBodyFeedbackSmall.transform.position = hitPoint;
             hitBodyFeedbackSmall.PlayFeedbacks();
         }
-        else if (damage > 20 && damage <= 40) 
+        else if (damage > 20 && damage <= 40)
         {
             hitBodyFeedbackMedium.transform.position = hitPoint;
             hitBodyFeedbackMedium.PlayFeedbacks();

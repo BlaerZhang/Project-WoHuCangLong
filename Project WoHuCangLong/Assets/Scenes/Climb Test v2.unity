@@ -247,7 +247,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50212746}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -7.48, z: 6}
+  m_LocalPosition: {x: 0, y: -0.48000002, z: 1}
   m_LocalScale: {x: 2.47, y: 2.47, z: 2.47}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1216,6 +1216,9 @@ Transform:
   - {fileID: 1084590114}
   - {fileID: 1045651125}
   - {fileID: 775118143}
+  - {fileID: 1074158395}
+  - {fileID: 635252204}
+  - {fileID: 1945694032}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2069,12 +2072,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 197780684}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -30, z: 5}
+  m_LocalPosition: {x: 0, y: -23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1367641737}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &197780687
 MonoBehaviour:
@@ -2389,6 +2392,8 @@ RectTransform:
   - {fileID: 1142990372}
   - {fileID: 1908162368}
   - {fileID: 1340993834}
+  - {fileID: 1564426770}
+  - {fileID: 1392284724}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2426,7 +2431,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c02be05538733a64cb1180adffde9a19, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.75
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -3913,7 +3918,7 @@ MonoBehaviour:
         FlashColor: {r: 0.57254905, g: 0.04705883, b: 0.003921569, a: 1}
         FlashDuration: 0.1
         FlashAlpha: 0.5
-        FlashID: 0
+        FlashID: 1
     - rid: 7244429545407250432
       type: {class: MMF_FreezeFrame, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
       data:
@@ -6183,6 +6188,325 @@ Transform:
   m_Father: {fileID: 1499431310}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &635252203
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 635252204}
+  - component: {fileID: 635252205}
+  m_Layer: 0
+  m_Name: Into Leaves Feedback Medium
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &635252204
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635252203}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 112283193}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &635252205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635252203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6da43522623d4704e979466dc7650b65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Feedbacks: []
+  InitializationMode: 2
+  SafeMode: 3
+  Direction: 0
+  AutoChangeDirectionOnEnd: 0
+  AutoPlayOnStart: 0
+  AutoPlayOnEnable: 0
+  ForceTimescaleMode: 0
+  ForcedTimescaleMode: 1
+  DurationMultiplier: 1
+  RandomizeDuration: 0
+  RandomDurationMultiplier: {x: 0.5, y: 1.5}
+  DisplayFullDurationDetails: 0
+  PlayerTimescaleMode: 1
+  CooldownDuration: 0
+  InitialDelay: 0
+  CanPlay: 1
+  CanPlayWhileAlreadyPlaying: 1
+  ChanceToPlay: 100
+  FeedbacksIntensity: 1
+  Events:
+    TriggerMMFeedbacksEvents: 0
+    TriggerUnityEvents: 1
+    OnPlay:
+      m_PersistentCalls:
+        m_Calls: []
+    OnPause:
+      m_PersistentCalls:
+        m_Calls: []
+    OnResume:
+      m_PersistentCalls:
+        m_Calls: []
+    OnRevert:
+      m_PersistentCalls:
+        m_Calls: []
+    OnComplete:
+      m_PersistentCalls:
+        m_Calls: []
+  DebugActive: 0
+  FeedbacksList:
+  - rid: 7244429281352220673
+  - rid: 7244429297954586625
+  KeepPlayModeChanges: 0
+  PerformanceMode: 0
+  ForceStopFeedbacksOnDisable: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 7244429281352220673
+      type: {class: MMF_Sound, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks.MMTools}
+      data:
+        Active: 1
+        UniqueID: -419994541
+        Label: Sound
+        Channel: 0
+        Chance: 100
+        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
+        Timing:
+          TimescaleMode: 0
+          ExcludeFromHoldingPauses: 0
+          ContributeToTotalDuration: 1
+          InitialDelay: 0
+          CooldownDuration: 0
+          InterruptsOnStop: 1
+          NumberOfRepeats: 0
+          RepeatForever: 0
+          DelayBetweenRepeats: 1
+          MMFeedbacksDirectionCondition: 0
+          PlayDirection: 0
+          ConstantIntensity: 0
+          UseIntensityInterval: 0
+          IntensityIntervalMin: 0
+          IntensityIntervalMax: 0
+          Sequence: {fileID: 0}
+          TrackID: 0
+          Quantized: 0
+          TargetBPM: 120
+        RandomizeOutput: 0
+        RandomMultiplier: {x: 0.8, y: 1}
+        RandomizeDuration: 0
+        RandomDurationMultiplier: {x: 0.5, y: 2}
+        Owner: {fileID: 635252205}
+        DebugActive: 0
+        Sfx: {fileID: 0}
+        RandomSfx:
+        - {fileID: 8300000, guid: a6f8b63ff22a0df4b8676afaefd20d80, type: 3}
+        - {fileID: 8300000, guid: eeac7d738543e244eb702b1cf886573c, type: 3}
+        - {fileID: 8300000, guid: d4c3220504af77e4097486dc43d6ebfd, type: 3}
+        - {fileID: 8300000, guid: e00f1e33e44b119429a272910c898cdc, type: 3}
+        TestPlayButton:
+          ButtonText: Debug Play Sound
+        TestStopButton:
+          ButtonText: Debug Stop Sound
+        PlayMethod: 2
+        PoolSize: 10
+        MinVolume: 1
+        MaxVolume: 1
+        MinPitch: 1
+        MaxPitch: 1
+        SfxAudioMixerGroup: {fileID: 0}
+        Priority: 128
+    - rid: 7244429297954586625
+      type: {class: MMF_ParticlesInstantiation, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
+      data:
+        Active: 1
+        UniqueID: -953594169
+        Label: Particles Instantiation
+        Channel: 0
+        Chance: 100
+        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
+        Timing:
+          TimescaleMode: 0
+          ExcludeFromHoldingPauses: 0
+          ContributeToTotalDuration: 1
+          InitialDelay: 0
+          CooldownDuration: 0
+          InterruptsOnStop: 1
+          NumberOfRepeats: 0
+          RepeatForever: 0
+          DelayBetweenRepeats: 1
+          MMFeedbacksDirectionCondition: 0
+          PlayDirection: 0
+          ConstantIntensity: 0
+          UseIntensityInterval: 0
+          IntensityIntervalMin: 0
+          IntensityIntervalMax: 0
+          Sequence: {fileID: 0}
+          TrackID: 0
+          Quantized: 0
+          TargetBPM: 120
+        RandomizeOutput: 0
+        RandomMultiplier: {x: 0.8, y: 1}
+        RandomizeDuration: 0
+        RandomDurationMultiplier: {x: 0.5, y: 2}
+        Owner: {fileID: 635252205}
+        DebugActive: 0
+        Mode: 1
+        ObjectPoolSize: 5
+        MutualizePools: 0
+        ParentTransform: {fileID: 0}
+        CachedRecycle: 0
+        ParticlesPrefab: {fileID: 8328713275310478672, guid: 7b032082646797a4fa0dcc7a09d629a6, type: 3}
+        RandomParticlePrefabs: []
+        ForceSetActiveOnPlay: 0
+        PositionMode: 1
+        InstantiateParticlesPosition: {fileID: 635252204}
+        TargetWorldPosition: {x: 0, y: 7, z: -5}
+        Offset: {x: 0, y: -2, z: 0}
+        NestParticles: 0
+        ApplyRotation: 0
+        ApplyScale: 0
+--- !u!1 &740579488
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 740579489}
+  - component: {fileID: 740579493}
+  - component: {fileID: 740579490}
+  - component: {fileID: 740579494}
+  m_Layer: 14
+  m_Name: Bush
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &740579489
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740579488}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.84, y: 1.6599998, z: 0}
+  m_LocalScale: {x: 3.1870973, y: 3.1870973, z: 3.1870973}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1367641737}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &740579490
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740579488}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.13170719, y: -9.173164}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.24, y: 8.32}
+    newSize: {x: 10.24, y: 8.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 44.025787, y: 13.508526}
+  m_EdgeRadius: 0
+--- !u!212 &740579493
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740579488}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1000
+  m_Sprite: {fileID: 21300000, guid: abc29f7190958ba468468dc73b7fa345, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 10.24, y: 8.32}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &740579494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740579488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b5447ac377ece9409f0db48a2001517, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &742023983
 GameObject:
   m_ObjectHideFlags: 0
@@ -6801,7 +7125,7 @@ MonoBehaviour:
         ForceSetActiveOnPlay: 0
         PositionMode: 2
         InstantiateParticlesPosition: {fileID: 1927201990}
-        TargetWorldPosition: {x: 0, y: 7, z: -5}
+        TargetWorldPosition: {x: 0, y: 9, z: -5}
         Offset: {x: 0, y: 0, z: 0}
         NestParticles: 1
         ApplyRotation: 0
@@ -7897,7 +8221,7 @@ MonoBehaviour:
         FlashColor: {r: 0.57254905, g: 0.04705883, b: 0.003921569, a: 1}
         FlashDuration: 0.1
         FlashAlpha: 0.25
-        FlashID: 0
+        FlashID: 1
     - rid: 7244429545407250432
       type: {class: MMF_FreezeFrame, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
       data:
@@ -9183,6 +9507,199 @@ Transform:
   m_Father: {fileID: 14317576}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1074158394
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1074158395}
+  - component: {fileID: 1074158396}
+  m_Layer: 0
+  m_Name: Into Leaves Feedback Large
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1074158395
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074158394}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 112283193}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1074158396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074158394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6da43522623d4704e979466dc7650b65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Feedbacks: []
+  InitializationMode: 2
+  SafeMode: 3
+  Direction: 0
+  AutoChangeDirectionOnEnd: 0
+  AutoPlayOnStart: 0
+  AutoPlayOnEnable: 0
+  ForceTimescaleMode: 0
+  ForcedTimescaleMode: 1
+  DurationMultiplier: 1
+  RandomizeDuration: 0
+  RandomDurationMultiplier: {x: 0.5, y: 1.5}
+  DisplayFullDurationDetails: 0
+  PlayerTimescaleMode: 1
+  CooldownDuration: 0
+  InitialDelay: 0
+  CanPlay: 1
+  CanPlayWhileAlreadyPlaying: 1
+  ChanceToPlay: 100
+  FeedbacksIntensity: 1
+  Events:
+    TriggerMMFeedbacksEvents: 0
+    TriggerUnityEvents: 1
+    OnPlay:
+      m_PersistentCalls:
+        m_Calls: []
+    OnPause:
+      m_PersistentCalls:
+        m_Calls: []
+    OnResume:
+      m_PersistentCalls:
+        m_Calls: []
+    OnRevert:
+      m_PersistentCalls:
+        m_Calls: []
+    OnComplete:
+      m_PersistentCalls:
+        m_Calls: []
+  DebugActive: 0
+  FeedbacksList:
+  - rid: 7244429281352220673
+  - rid: 7244429297954586625
+  KeepPlayModeChanges: 0
+  PerformanceMode: 0
+  ForceStopFeedbacksOnDisable: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 7244429281352220673
+      type: {class: MMF_Sound, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks.MMTools}
+      data:
+        Active: 1
+        UniqueID: -419994541
+        Label: Sound
+        Channel: 0
+        Chance: 100
+        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
+        Timing:
+          TimescaleMode: 0
+          ExcludeFromHoldingPauses: 0
+          ContributeToTotalDuration: 1
+          InitialDelay: 0
+          CooldownDuration: 0
+          InterruptsOnStop: 1
+          NumberOfRepeats: 0
+          RepeatForever: 0
+          DelayBetweenRepeats: 1
+          MMFeedbacksDirectionCondition: 0
+          PlayDirection: 0
+          ConstantIntensity: 0
+          UseIntensityInterval: 0
+          IntensityIntervalMin: 0
+          IntensityIntervalMax: 0
+          Sequence: {fileID: 0}
+          TrackID: 0
+          Quantized: 0
+          TargetBPM: 120
+        RandomizeOutput: 0
+        RandomMultiplier: {x: 0.8, y: 1}
+        RandomizeDuration: 0
+        RandomDurationMultiplier: {x: 0.5, y: 2}
+        Owner: {fileID: 1074158396}
+        DebugActive: 0
+        Sfx: {fileID: 0}
+        RandomSfx:
+        - {fileID: 8300000, guid: c1804aaf815a586428a139e87fdf0322, type: 3}
+        - {fileID: 8300000, guid: 1bb06dff70d4ce34caf8527110776b17, type: 3}
+        TestPlayButton:
+          ButtonText: Debug Play Sound
+        TestStopButton:
+          ButtonText: Debug Stop Sound
+        PlayMethod: 2
+        PoolSize: 10
+        MinVolume: 1
+        MaxVolume: 1
+        MinPitch: 1
+        MaxPitch: 1
+        SfxAudioMixerGroup: {fileID: 0}
+        Priority: 128
+    - rid: 7244429297954586625
+      type: {class: MMF_ParticlesInstantiation, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
+      data:
+        Active: 1
+        UniqueID: -953594169
+        Label: Particles Instantiation
+        Channel: 0
+        Chance: 100
+        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
+        Timing:
+          TimescaleMode: 0
+          ExcludeFromHoldingPauses: 0
+          ContributeToTotalDuration: 1
+          InitialDelay: 0.5
+          CooldownDuration: 0
+          InterruptsOnStop: 1
+          NumberOfRepeats: 0
+          RepeatForever: 0
+          DelayBetweenRepeats: 1
+          MMFeedbacksDirectionCondition: 0
+          PlayDirection: 0
+          ConstantIntensity: 0
+          UseIntensityInterval: 0
+          IntensityIntervalMin: 0
+          IntensityIntervalMax: 0
+          Sequence: {fileID: 0}
+          TrackID: 0
+          Quantized: 0
+          TargetBPM: 120
+        RandomizeOutput: 0
+        RandomMultiplier: {x: 0.8, y: 1}
+        RandomizeDuration: 0
+        RandomDurationMultiplier: {x: 0.5, y: 2}
+        Owner: {fileID: 1074158396}
+        DebugActive: 0
+        Mode: 1
+        ObjectPoolSize: 5
+        MutualizePools: 0
+        ParentTransform: {fileID: 0}
+        CachedRecycle: 0
+        ParticlesPrefab: {fileID: 2570761155111138582, guid: b7f3573794e405143b77c82c1e6e1cba, type: 3}
+        RandomParticlePrefabs: []
+        ForceSetActiveOnPlay: 0
+        PositionMode: 1
+        InstantiateParticlesPosition: {fileID: 1074158395}
+        TargetWorldPosition: {x: 0, y: 7, z: -5}
+        Offset: {x: 0, y: -2, z: 0}
+        NestParticles: 0
+        ApplyRotation: 0
+        ApplyScale: 0
 --- !u!1 &1084590113
 GameObject:
   m_ObjectHideFlags: 0
@@ -9501,7 +10018,7 @@ MonoBehaviour:
         FlashColor: {r: 0.57254905, g: 0.04705883, b: 0.003921569, a: 1}
         FlashDuration: 0.1
         FlashAlpha: 1
-        FlashID: 0
+        FlashID: 1
     - rid: 7244429545407250432
       type: {class: MMF_FreezeFrame, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
       data:
@@ -11897,7 +12414,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0.17}
   m_SizeDelta: {x: 4295.548, y: 2416.2458}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1340993835
@@ -11996,11 +12513,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1367641736}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 7, z: -5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 50212748}
+  - {fileID: 740579489}
   - {fileID: 197780686}
   - {fileID: 1927201990}
   m_Father: {fileID: 0}
@@ -12107,6 +12625,118 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1392284723
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1392284724}
+  - component: {fileID: 1392284728}
+  - component: {fileID: 1392284727}
+  - component: {fileID: 1392284726}
+  - component: {fileID: 1392284725}
+  m_Layer: 5
+  m_Name: Right Flash
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1392284724
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392284723}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 212464694}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1073.8999, y: 0.17004395}
+  m_SizeDelta: {x: 2147.8, y: 2416.2458}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1392284725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392284723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5463d50a0cd9b2449a50f538278303d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Channel: 0
+  FlashID: 1
+  Interruptable: 0
+  DebugSettings:
+    Channel: 0
+    FlashColor: {r: 1, g: 1, b: 1, a: 1}
+    FlashDuration: 0.2
+    FlashAlpha: 1
+    FlashID: 0
+  DebugTestButton: 0
+--- !u!225 &1392284726
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392284723}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &1392284727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392284723}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1392284728
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392284723}
+  m_CullTransparentMesh: 1
 --- !u!1 &1412084323
 GameObject:
   m_ObjectHideFlags: 0
@@ -14436,6 +15066,118 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1564426769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1564426770}
+  - component: {fileID: 1564426774}
+  - component: {fileID: 1564426773}
+  - component: {fileID: 1564426772}
+  - component: {fileID: 1564426771}
+  m_Layer: 5
+  m_Name: Left Flash
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1564426770
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564426769}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 212464694}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1073.8999, y: 0.17004395}
+  m_SizeDelta: {x: 2147.8, y: 2416.2458}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1564426771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564426769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5463d50a0cd9b2449a50f538278303d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Channel: 0
+  FlashID: 1
+  Interruptable: 0
+  DebugSettings:
+    Channel: 0
+    FlashColor: {r: 1, g: 1, b: 1, a: 1}
+    FlashDuration: 0.2
+    FlashAlpha: 1
+    FlashID: 0
+  DebugTestButton: 0
+--- !u!225 &1564426772
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564426769}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &1564426773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564426769}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1564426774
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564426769}
+  m_CullTransparentMesh: 1
 --- !u!1 &1573411210
 GameObject:
   m_ObjectHideFlags: 0
@@ -15220,7 +15962,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4213483185489526092, guid: 5c966e5de4143d94f9633f6c9e41ff86, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4213483185489526092, guid: 5c966e5de4143d94f9633f6c9e41ff86, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15228,11 +15970,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4213483185489526092, guid: 5c966e5de4143d94f9633f6c9e41ff86, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4213483185489526092, guid: 5c966e5de4143d94f9633f6c9e41ff86, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 4213483185489526092, guid: 5c966e5de4143d94f9633f6c9e41ff86, type: 3}
       propertyPath: m_LocalRotation.w
@@ -15261,18 +16003,6 @@ PrefabInstance:
     - target: {fileID: 4213483185489526092, guid: 5c966e5de4143d94f9633f6c9e41ff86, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4213483185489526095, guid: 5c966e5de4143d94f9633f6c9e41ff86, type: 3}
-      propertyPath: prewarm
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4213483185489526095, guid: 5c966e5de4143d94f9633f6c9e41ff86, type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4213483185489526095, guid: 5c966e5de4143d94f9633f6c9e41ff86, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c966e5de4143d94f9633f6c9e41ff86, type: 3}
@@ -17110,6 +17840,199 @@ Transform:
   m_Father: {fileID: 14317576}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1945694031
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1945694032}
+  - component: {fileID: 1945694033}
+  m_Layer: 0
+  m_Name: Into Leaves Feedback Small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1945694032
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945694031}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 112283193}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1945694033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945694031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6da43522623d4704e979466dc7650b65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Feedbacks: []
+  InitializationMode: 2
+  SafeMode: 3
+  Direction: 0
+  AutoChangeDirectionOnEnd: 0
+  AutoPlayOnStart: 0
+  AutoPlayOnEnable: 0
+  ForceTimescaleMode: 0
+  ForcedTimescaleMode: 1
+  DurationMultiplier: 1
+  RandomizeDuration: 0
+  RandomDurationMultiplier: {x: 0.5, y: 1.5}
+  DisplayFullDurationDetails: 0
+  PlayerTimescaleMode: 1
+  CooldownDuration: 0
+  InitialDelay: 0
+  CanPlay: 1
+  CanPlayWhileAlreadyPlaying: 1
+  ChanceToPlay: 100
+  FeedbacksIntensity: 1
+  Events:
+    TriggerMMFeedbacksEvents: 0
+    TriggerUnityEvents: 1
+    OnPlay:
+      m_PersistentCalls:
+        m_Calls: []
+    OnPause:
+      m_PersistentCalls:
+        m_Calls: []
+    OnResume:
+      m_PersistentCalls:
+        m_Calls: []
+    OnRevert:
+      m_PersistentCalls:
+        m_Calls: []
+    OnComplete:
+      m_PersistentCalls:
+        m_Calls: []
+  DebugActive: 0
+  FeedbacksList:
+  - rid: 7244429281352220673
+  - rid: 7244429297954586625
+  KeepPlayModeChanges: 0
+  PerformanceMode: 0
+  ForceStopFeedbacksOnDisable: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 7244429281352220673
+      type: {class: MMF_Sound, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks.MMTools}
+      data:
+        Active: 1
+        UniqueID: -419994541
+        Label: Sound
+        Channel: 0
+        Chance: 100
+        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
+        Timing:
+          TimescaleMode: 0
+          ExcludeFromHoldingPauses: 0
+          ContributeToTotalDuration: 1
+          InitialDelay: 0
+          CooldownDuration: 0
+          InterruptsOnStop: 1
+          NumberOfRepeats: 0
+          RepeatForever: 0
+          DelayBetweenRepeats: 1
+          MMFeedbacksDirectionCondition: 0
+          PlayDirection: 0
+          ConstantIntensity: 0
+          UseIntensityInterval: 0
+          IntensityIntervalMin: 0
+          IntensityIntervalMax: 0
+          Sequence: {fileID: 0}
+          TrackID: 0
+          Quantized: 0
+          TargetBPM: 120
+        RandomizeOutput: 0
+        RandomMultiplier: {x: 0.8, y: 1}
+        RandomizeDuration: 0
+        RandomDurationMultiplier: {x: 0.5, y: 2}
+        Owner: {fileID: 1945694033}
+        DebugActive: 0
+        Sfx: {fileID: 0}
+        RandomSfx:
+        - {fileID: 8300000, guid: 951f98f8d207a2d459f9d36d0139284d, type: 3}
+        - {fileID: 8300000, guid: bf8d0a3ee381f024b9abcf57093ffbdf, type: 3}
+        TestPlayButton:
+          ButtonText: Debug Play Sound
+        TestStopButton:
+          ButtonText: Debug Stop Sound
+        PlayMethod: 2
+        PoolSize: 10
+        MinVolume: 1
+        MaxVolume: 1
+        MinPitch: 1
+        MaxPitch: 1
+        SfxAudioMixerGroup: {fileID: 0}
+        Priority: 128
+    - rid: 7244429297954586625
+      type: {class: MMF_ParticlesInstantiation, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
+      data:
+        Active: 1
+        UniqueID: -953594169
+        Label: Particles Instantiation
+        Channel: 0
+        Chance: 100
+        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
+        Timing:
+          TimescaleMode: 0
+          ExcludeFromHoldingPauses: 0
+          ContributeToTotalDuration: 1
+          InitialDelay: 0
+          CooldownDuration: 0
+          InterruptsOnStop: 1
+          NumberOfRepeats: 0
+          RepeatForever: 0
+          DelayBetweenRepeats: 1
+          MMFeedbacksDirectionCondition: 0
+          PlayDirection: 0
+          ConstantIntensity: 0
+          UseIntensityInterval: 0
+          IntensityIntervalMin: 0
+          IntensityIntervalMax: 0
+          Sequence: {fileID: 0}
+          TrackID: 0
+          Quantized: 0
+          TargetBPM: 120
+        RandomizeOutput: 0
+        RandomMultiplier: {x: 0.8, y: 1}
+        RandomizeDuration: 0
+        RandomDurationMultiplier: {x: 0.5, y: 2}
+        Owner: {fileID: 1945694033}
+        DebugActive: 0
+        Mode: 1
+        ObjectPoolSize: 5
+        MutualizePools: 0
+        ParentTransform: {fileID: 0}
+        CachedRecycle: 0
+        ParticlesPrefab: {fileID: 3939245820695787957, guid: 6748c5a0d8c22b44fb1022f5fc6a8121, type: 3}
+        RandomParticlePrefabs: []
+        ForceSetActiveOnPlay: 0
+        PositionMode: 1
+        InstantiateParticlesPosition: {fileID: 1945694032}
+        TargetWorldPosition: {x: 0, y: 7, z: -5}
+        Offset: {x: 0, y: -2, z: 0}
+        NestParticles: 0
+        ApplyRotation: 0
+        ApplyScale: 0
 --- !u!1 &1946573183
 GameObject:
   m_ObjectHideFlags: 0
